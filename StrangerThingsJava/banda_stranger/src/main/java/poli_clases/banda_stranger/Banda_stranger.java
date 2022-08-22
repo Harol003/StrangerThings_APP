@@ -4,7 +4,6 @@
  */
 
 package poli_clases.banda_stranger;
-
 /**
  *
  * @author Harol Hernan Torres
@@ -12,16 +11,13 @@ package poli_clases.banda_stranger;
  * harol.torres@pi.edu.co
  */
 public class Banda_stranger {
-    
         /* Define los tipos de datos para este caso proyecto stranger things  */
-    
     private String nomcan;
     private String artiscan;
     private int anocan;
     private int epican;
     private int tempocan;
 public Banda_stranger ( String nombrecancion, String artistacancion, int anocancion, int episodiocancion, int tempocancion)   {
-    
     /** 
      * Esta es otra forma de instanciar
     edad = edad_actor;
@@ -30,7 +26,6 @@ public Banda_stranger ( String nombrecancion, String artistacancion, int anocanc
     Gen = Gen_actor;
     tempo = temporada_actor;
      *  */
-    
 this.nomcan = nombrecancion;
 this.artiscan = artistacancion;
 this.anocan = anocancion;
@@ -38,9 +33,7 @@ this.epican = episodiocancion;
 this.tempocan = tempocancion;
 } 
     public static void main(String[] args) {
-        
                    /* imprime en pantalla los campos capturados para el proyecto stranger things  */
-        
        System.out.println("Politecnico Internacional");
        System.out.println("Informacion de la Banda Sonora para la serie Stranger Things");
        Banda_stranger bc  = new Banda_stranger ("Master of Puppets", "Metallica", 1986, 5, 4); //Creamos un objeto enviando parámetros al constructor

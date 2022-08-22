@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>poli_clases</groupId>
-    <artifactId>actor_stranger</artifactId>
+    <artifactId>libros_stranger</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
-        <exec.mainClass>poli_clases.actor_stranger.Actor_stranger</exec.mainClass>
+        <exec.mainClass>poli_clases.libros_stranger.Libros_stranger</exec.mainClass>
     </properties>
 </project>
