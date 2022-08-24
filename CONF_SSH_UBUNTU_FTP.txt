@@ -1,0 +1,163 @@
+*********************
+HABILITAR SSH
+*********************
+
+sudo apt install ssh
+service ssh status
+ssh linuxconfig@ubuntu-server      (NOMBRESERVIDOR@USUARIO)
+
+
+********************
+SUBIR SERVICIO
+********************
+
+sudo service ssh stop
+sudo service ssh start
+sudo systemctl disable ssh
+sudo systemctl enable ssh
+
+*********************
+CONECTARSE SSH
+*********************
+
+ssh usuario@[IP]:[puerto]   ssh ruvelro@192.168.1.6:22
+
+*********************
+INSTALAR FTP
+*********************
+
+sudo apt-get update
+sudo apt-get install vsftpd
+
+*********************
+VALIDACIONES ANTES DE
+*********************
+
+sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.original
+sudo ufw status                                     STATUS DEL FW
+  SI LA SALIDA ES ufw: command not found            FW NO ESTA INSTALADO
+  SI LA SALIDA ES sudo ufw allow 20/tcp		    FW ESTA INSTALADO
+
+***************************
+APERTURA DE PUERTOS FW
+***************************
+
+sudo ufw allow 20/tcp
+
+sudo ufw allow 21/tcp
+
+sudo ufw allow 990/tcp
+
+sudo ufw allow 40000:50000/tcp
+
+***************************
+STATUS DEL FW
+***************************
+
+sudo ufw status
+
+**************************
+CONFIGURACION DE SITIO
+**************************
+
+sudo adduser alex
+sudo mkdir /home/alex/ftp
+sudo chown nobody:nogroup /home/alex/ftp             SE DEJA COMO PROPIETARIO AL USUARIO CREADO
+sudo chmod a-w /home/alex/ftp                        ELIMINA PERMISOS EN CARPETA RAIZ
+sudo ls -la /home/alex/ftp		             VERIFICA PERMISOS
+
+SALIDA DE COMANDO ANTERIOR
+total 8
+dr-xr-xr-x 2 nobody nogroup 4096 Jun 29 11:32 .
+drwxr-xr-x 3 alex   alex    4096 Jun 29 11:32 ..
+
+
+sudo mkdir /home/alex/ftp/files			                               CARPETA DE ALOJAMIENTO DE LOS ARCHIVOS FTP
+sudo chown alex:alex /home/alex/ftp/files                                     SE OTORGAN PERMISOS EN EL FTP
+echo "vsftpd sample file" | sudo tee /home/alex/ftp/files/sample.txt          ARCHIVO DE PRUEBA
+
+
+**************************
+SITIO SEGURO FTP
+**************************
+
+EDICION DEL ARCHIVO
+sudo nano /etc/vsftpd.conf
+
+VALIDAR 
+# Allow anonymous FTP? (Disabled by default).
+anonymous_enable=NO
+#
+# Uncomment this to allow local users to log in.
+local_enable=YES
+
+
+CAMBIAR A
+write_enable=YES
+chroot_local_user=YES
+
+AGREGAR EN EL ARCHIVO PARA QUE APLIQUE PARA TODOS LOS USUARIOS
+user_sub_token=$USER
+local_root=/home/$USER/ftp
+
+
+CONEXION LIMITADAS
+pasv_min_port = 40000
+pasv_max_port = 50000
+
+
+SE CONFIRMA QUE SOLO LOS USUARIOS AUTENTICADOS TIENEN ACCESO DE ACUERO A LA LISTA
+userlist_enable=YES
+userlist_file=/etc/vsftpd.userlist
+userlist_deny=NO
+
+FIN EDICION DE ARCHIVO
+
+echo "alex" | sudo tee -a /etc/vsftpd.userlist			CREACION DE DIRECTORIO PARA ACCESO
+cat /etc/vsftpd.userlist                                        LISTA DE USUARIOS PERMITIDOS
+sudo systemctl restart vsftpd					REINICIO DE SERVICIO
+
+
+*****************************
+CONFIGURACION FTP SEGURO
+*****************************
+
+CREACION DEL CERTIFICADO -days (numero de dias valido) RSA (claver privada de 2048)
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem                       
+
+EDICION DEL ARCHIVO
+sudo nano /etc/vsftpd.conf
+
+COMENTARIAR
+# rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+# rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+
+
+APUTAR A CERTIFICADO CREADO
+rsa_cert_file=/etc/ssl/private/vsftpd.pem
+rsa_private_key_file=/etc/ssl/private/vsftpd.pem
+
+HABILITAR EN EL ARCHIVO DE CONFIGURACION SSL
+ssl_enable=YES
+
+DESHABILITAR CONEXION ANONIMAS
+allow_anon_ssl=NO
+force_local_data_ssl=YES
+force_local_logins_ssl=YES
+
+VERSION TLS
+ssl_tlsv1=YES
+ssl_sslv2=NO
+ssl_sslv3=NO
+
+ADICIONAR PARA EVITAR ERRORES CON SSL
+require_ssl_reuse=NO
+ssl_ciphers=HIGH
+
+FIN EDICION
+
+sudo systemctl restart vsftpd         REINICIAR SERVICIO
+
+
+PROBAR CON FILEZILLA
+
