@@ -1,0 +1,149 @@
+************************************************************************************************************************************************************************
+				RECONOCIMIENTO DEL SISTEMA
+************************************************************************************************************************************************************************
+mount                        					- Reconoce el punto de montaje del sistema 
+pwd                         						- Ubicacion en el sistema de archivos
+cd                           						- cambia de directorio
+sudo dhclient -r           					- Libera direccion ip
+sudo dhclient            					- Asigna nueva direccion ip automaticamente
+sudo -s							- Inicia en modo root para instalacion inicial.
+sudo shutdown -r now   					- Reinicia el sistema
+sudo reboot              				                -  Reinicia el sistema
+sudo apt-get install network-manager   				- Instalacion network manager
+tty						                - Identifica la consola sobre la cual se esta trabajando
+echo hola > /dev/pts/0					- Copia informacion de salida.
+less							- Lista contenido de un archivo
+cat > ejercicio.txt						- Crear archivo
+les /etc/fstab						- Muestra contenido FSTAB
+
+ps aux | grep -i apt
+
+************************************************************************************************************************************************************************
+					ENTORNO GRAFICO
+************************************************************************************************************************************************************************
+env | grep DESKTOP_SESSION=                           			 -  Lista entonro grafico instalado en el sistema.
+sudo apt install tasksel                                            			 -  Instalar entorno KDE
+sudo apt install kubuntu-desktop                               			-  Instalar entorno Kubuntu Desktop
+sudo apt purge kubuntu-desktop				-  Desinstalar KDE
+sudo apt autoremove						-  Desinstalar KDE				
+sudo add-apt-repository --remove ppa:kubuntu-ppa/backports                    -  Desinstalar KDE (For Ubuntu 16.04 only)
+
+sudo apt install lightdm		             			 - Instalar LigthDM
+sudo apt-get install lxdm		             			 - Instalar LXDM
+
+sudo apt-get install sddm 		             			  - Instalar SDDM Unicamente para versiones posterior a la 15.0
+sudo apt-add-repository ppa: blue-shell / sddm         			 - Crear directorio, para version anterio a Ubuntu 15.0
+sudo apt-get update						- Descargar Actualizacion para version anterior a Ubuntu 15.0
+sudo apt-get install sddm					- Instalar para version anterior a Ubuntu 15.0
+
+sudo i							- Ingresar como root
+sudo passwd root						- cambiar passwd root
+sudo passwd -dl root						- deshabilitar root
+
+************************************************************************************************************************************************************************
+					ACTUALIZAR SISTEMA
+************************************************************************************************************************************************************************
+sudo apt update						- Actualzia el sistema
+Sudo apt list –upgradable					- Lista actualziaciones del sistema
+Sudo apt remove && sudo apt clean				- Limpia software obsoleto
+lsb_release -a						- muestra la version del sistema operativo
+
+************************************************************************************************************************************************************************
+						SYNAPTIC
+************************************************************************************************************************************************************************
+sudo apt-get install synaptic					- Instalar gestor de paquetes
+
+************************************************************************************************************************************************************************
+						APT
+************************************************************************************************************************************************************************
+sudo apt-get install nombre_del_paquete				- Instalar paquetes:
+sudo apt-get remove nombre_del_paquete			- Eliminar paquetes:
+apt-cache search palabra_clave					- Buscar paquetes
+sudo apt-get update 						- Obtener listas actualizadas de los paquetes disponibles	
+sudo apt-get dist-upgrade					- Modernizar su sistema con las actualizaciones disponibles:
+apt-get help						-  Ver más comandos y opciones
+
+
+ERRORES DE INSTALACION
+
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+sudo dpkg --configure -a
+
+************************************************************************************************************************************************************************
+						FDISK
+************************************************************************************************************************************************************************
+fdisk –l							- Listar discos
+sudo fdisk /dev/sda						- Configurar FDISK
+
+************************************************************************************************************************************************************************
+					CONFIGURAR TARJETA DE RED
+************************************************************************************************************************************************************************
+
+Ifconfig -a							- Estado de la interfaz
+sudo ifconfig enp0s3 down					- Bajar interfaz de red
+sudo ifconfig enp0s3 up					- Subir interfaz de red
+ifconfig eth0 192.168.1.134 netmask 255.255.255.0 up			- Configuracion temporal de tarjeta de red
+cd /etc/netplan						- Ubicacion de archivos de configuracion en Net Plan
+sudo cp 01-network-manager-all.yaml Copia_archivos			- Copia de archivo de configuracion
+
+ethernets:							- Configura tarjeta de red con ip estatica
+	enp0s3:
+		dhcp4: no
+		dhcp6: no
+		address: [192.168.0.2/24]
+		gateway4: 192.168.0.1
+		nameservers:	
+			address: [192.168.0.1,8.8.8.8]
+
+************************************************************************************************************************************************************************
+					COMANDOS DE RED
+************************************************************************************************************************************************************************
+ping               192.168.0.1				- Prueba de conectividad
+traceroute	     www.google.com				- Prueba de conectividad en trazas
+route -n						- Rutas configuradas
+dig 	     www.google.com				- Verificacion de DNS
+ifconfig -a						- Informacion de interfaz de red
+ip addrs ls						- Informacion de las interfaces de red
+nslookup						- Resolucion de nombres
+
+************************************************************************************************************************************************************************
+					INSTALAR WIRESHARK
+************************************************************************************************************************************************************************
+sudo apt install wireshark				- Instalacion de la aplicacion de monitoreo
+
+
+************************************************************************************************************************************************************************
+					VNC SERVER
+************************************************************************************************************************************************************************
+
+sudo apt install xfce4 xfce4-goodies
+sudo apt install tightvncserver
+vncserver 
+vncserver -kill :1
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+adduser vnc
+gpasswd -a vnc sudo
+
+
+sudo apt install xfce4
+sudo apt install lxde
+cd .vnc/
+vi xstartup
+/usr/bin/startl.xde
+vncserver -kill :1
+vncserver
+
+
+
+
+
+
+
+
+
+
+
+
+
