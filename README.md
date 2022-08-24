@@ -21,6 +21,10 @@ StrangerThings_APP - Politecnico Internacional
 
 *[Índice](#índice)
 
+        Crud en LAMP - INNOVACOL
+        Persistencia de Sesion PHP - LoginST
+        Clases, objetos, metodos, atributos en JAVA - StrangerThingsJAVA
+
 *[Descripción del proyecto](#descripción-del-proyecto)
 
 *[Estado del proyecto](#Estado-del-proyecto)
