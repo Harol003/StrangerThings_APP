@@ -10,7 +10,10 @@ StrangerThings_APP - Politecnico Internacional
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
  </p>
  
- ##Índice
+
+
+
+##Índice
 
 *[Título e imagen de portada](#Título-e-imagen-de-portada)
 
@@ -28,11 +31,31 @@ StrangerThings_APP - Politecnico Internacional
 
 *[Tecnologías utilizadas](#tecnologías-utilizadas)
 
+El siguiente proyecto se desarrolla desde el paradigma de programacion orientada a objetos. Para el cual se definen: clases, objetos, metodos y atributos. De igual forma se presenta una solucion en un modelo de tres capas desde la integracion de un LAMP. Asi se listan el versionamiento utilizados en este proyecto: 
+
+Product Version: Apache NetBeans IDE 14
+Updates: NetBeans IDE is updated to version NetBeans 8.2 Patch 2
+Java: 18.0.2.1; Java HotSpot(TM) 64-Bit Server VM 18.0.2.1+1-1
+Runtime: Java(TM) SE Runtime Environment 18.0.2.1+1-1
+System: Windows 11 version 10.0 running on amd64; UTF-8; es_CO (nb)
+
 *[Personas Contribuyentes](#personas-contribuyentes)
+
+Equipo de desarrollo Agil  - 
+Desarrollador 1            -
+Desarrollador 2            -
+Product Owner              -
+Scrum Master               -
+QA Tester                  -
 
 *[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
 
+Harol Hernan Torres Neuta
+
 * [Licencia](#licencia)
 
+Creative Commons 4.0
+
 *[Conclusión](#conclusión)
- 
+
+El desarrollar aplicaciones desde una vista de programacion orientada a objetos habilita nuevos SKILL en pro de fortalecer conceptos basicos y su puesta en marcha. Adicionalmente la integracion de arquitecturas en un modelo de tres capas permite un performance adecuado y una definicion en una linea base a nivel de transaccionalidad. Esto se resume en el fortalecimiento de conocimientos en desarrollo desde las diferentes tecnologias que se pueden tener. 
