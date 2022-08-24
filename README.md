@@ -25,9 +25,29 @@ StrangerThings_APP - Politecnico Internacional
 
 *[Estado del proyecto](#Estado-del-proyecto)
 
+El presente proyecto se encuentra en etapa de desarrollo.
+
 *[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
 
 *[Acceso al proyecto](#acceso-proyecto)
+
+Las siguientes son las credenciales utilizadas para el proyecto.
+
+Web
+   stranger - Usuario
+   things   - Password
+   
+BD
+  StrangerTHings2 - BD
+  root            - Usuario
+  Colombia2020.   - Password
+  
+
+Linux - Ubuntu
+  adminserver     - Usuarios con privilegios
+  admin123        - Passwd Ubuntu
+  
+
 
 *[Tecnologías utilizadas](#tecnologías-utilizadas)
 
