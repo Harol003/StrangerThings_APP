@@ -33,7 +33,7 @@ El presente proyecto se encuentra en etapa de desarrollo.
 
 *[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
 
-A continuacuion pueden descargar la maquina virtual, recuerden que deben importarla en virtualbox. La clave de acceso es Politecnico
+A continuacion pueden descargar la maquina virtual, recuerden que deben importarla en virtualbox. La clave de acceso es Politecnico
 
 https://pieduco-my.sharepoint.com/:u:/g/personal/harol_torres_pi_edu_co/EQWT0hl5EJVFlpCmGH3xvc8BblnZehw2bo59Ln26Q4e38w?e=Z7FnRe
 
