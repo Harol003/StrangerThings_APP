@@ -1,0 +1,48 @@
+@options
+@packages
+@argfile
+-encoding
+'UTF-8'
+-protected
+-source
+'18'
+-sourcepath
+'C:/Users/Harol/OneDrive/Documentos/NetBeansProjects/STHerencia/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Harol/OneDrive/Documentos/NetBeansProjects/STHerencia/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'STHerencia 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'STHerencia 1.0-SNAPSHOT API'
+poli_clases.stherencia
+'C:/Users/Harol/OneDrive/Documentos/NetBeansProjects/STHerencia/src/main/java/poli_clases/stherencia/STActor.java'
+'C:/Users/Harol/OneDrive/Documentos/NetBeansProjects/STHerencia/src/main/java/poli_clases/stherencia/STAntagonista.java'
+'C:/Users/Harol/OneDrive/Documentos/NetBeansProjects/STHerencia/src/main/java/poli_clases/stherencia/STHerencia.java'
+'C:/Users/Harol/OneDrive/Documentos/NetBeansProjects/STHerencia/src/main/java/poli_clases/stherencia/STProtagonista.java'
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\src\main\java = 1661947449477
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\allclasses-index.html = 1661961786182
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\allpackages-index.html = 1661961786183
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\copy.svg = 1661961786206
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\element-list = 1661961786141
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\help-doc.html = 1661961786203
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\index-all.html = 1661961786197
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\index.html = 1661961786199
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\jquery-ui.overrides.css = 1661961786230
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\member-search-index.js = 1661961786187
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\module-search-index.js = 1661961786184
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\overview-tree.html = 1661961786173
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\package-search-index.js = 1661961786185
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\script.js = 1661961786205
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\search.js = 1661961786208
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\stylesheet.css = 1661961786204
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\tag-search-index.js = 1661961786188
+C:\Users\Harol\OneDrive\Documentos\NetBeansProjects\STHerencia\target\site\apidocs\type-search-index.js = 1661961786186
