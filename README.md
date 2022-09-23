@@ -102,6 +102,10 @@ https://github.com/ricardolandinez/BOYZ.git
 
 https://github.com/hannaamaya/StrangerThings
 
+https://github.com/FrankGitMaster/DragonBallfanApp
+
+https://github.com/StivenUrbano/Proyecto_BRANDONKens
+
 
 
 *[Conclusión](#conclusión)
