@@ -89,10 +89,20 @@ Creative Commons 4.0
 A continuacion algunos proyectos realizados por mis estudiantes. 
 
 https://github.com/JuanEstebanGPX/Stranger-Things
+
+
 https://github.com/sese01/Pokemon
+
+
 https://github.com/sebastianpl1306/Pol-Stranger-Things
+
+
 https://github.com/ricardolandinez/BOYZ.git
+
+
 https://github.com/hannaamaya/StrangerThings
+
+
 
 *[Conclusión](#conclusión)
 
