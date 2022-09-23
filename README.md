@@ -84,6 +84,16 @@ Harol Hernan Torres Neuta
 
 Creative Commons 4.0
 
+* [Proyectos](#Estudiantes)
+
+A continuacion algunos proyectos realizados por mis estudiantes. 
+
+https://github.com/JuanEstebanGPX/Stranger-Things
+https://github.com/sese01/Pokemon
+https://github.com/sebastianpl1306/Pol-Stranger-Things
+https://github.com/ricardolandinez/BOYZ.git
+https://github.com/hannaamaya/StrangerThings
+
 *[Conclusión](#conclusión)
 
 El desarrollar aplicaciones desde una vista de programacion orientada a objetos habilita nuevos SKILL en pro de fortalecer conceptos basicos y su puesta en marcha. Adicionalmente la integracion de arquitecturas en un modelo de tres capas permite un performance adecuado y una definicion en una linea base a nivel de transaccionalidad. Esto se resume en el fortalecimiento de conocimientos en desarrollo desde las diferentes tecnologias que se pueden tener. 
