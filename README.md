@@ -84,7 +84,7 @@ Harol Hernan Torres Neuta
 
 Creative Commons 4.0
 
-* [Proyectos Estudiantes](#Estudiantes)
+*[Proyectos Estudiantes Reto Stranger Things](#StrangerThings)
 
 A continuacion algunos proyectos realizados por mis estudiantes aplicados al reto Stranger Things. 
 
