@@ -102,9 +102,38 @@ https://github.com/ricardolandinez/BOYZ.git
 
 https://github.com/hannaamaya/StrangerThings
 
+
 https://github.com/FrankGitMaster/DragonBallfanApp
 
+
 https://github.com/StivenUrbano/Proyecto_BRANDONKens
+
+https://github.com/EDCC21/Poli
+
+
+https://github.com/AuraArteaga/Proyecto-Stranger-Things
+
+
+https://github.com/DeveloperBlue7/Proyecto-Stranger-Things
+
+
+https://github.com/Alejo8543
+
+
+https://github.com/FelipeMartin14/Stranger-Things
+
+
+https://github.com/DcSebas95/PROYECTO.STRANGER.THINGS.git
+
+
+https://github.com/ANGELAg12345/RETO-STRONGER-THINGS/upload/main
+
+
+https://github.com/santi9731/Stranger-Things---INNOVA-COLOMBIA
+
+
+
+
 
 
 
